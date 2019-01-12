@@ -43,6 +43,11 @@ namespace ConsoleApp
             Console.WriteLine(HelloWorld.hello + " " + HelloWorld.getLocation(w) + "!" +
                 "\n" + HelloWorld.hello + " " + HelloWorld.getLocation(g) + "!" +
                 "\n" + HelloWorld.hello + " " + HelloWorld.getLocation(u) + "!");
+            /* Output
+             * Hello World!
+             * Hello Galaxy!
+             * Hello Universe!
+             */
             Console.ReadKey();
         }
 
