@@ -21,6 +21,7 @@ namespace TextbookEx5
             WriteLine();
             WriteLine(
                "People sorted with default comparer (by age):");
+            //when sort() is called it uses the CompareTo function in the person class by default to sort by age
             list.Sort();
             for (int i = 0; i < list.Count; i++)
             {
@@ -29,6 +30,8 @@ namespace TextbookEx5
             WriteLine();
             WriteLine(
                "People sorted with nondefault comparer (by name):");
+            //This time the Sort method does a nondefault comparison using the 
+            //Compare method in the PersonComparerName Class
             list.Sort(PersonComparerName.Default);
             for (int i = 0; i < list.Count; i++)
             {

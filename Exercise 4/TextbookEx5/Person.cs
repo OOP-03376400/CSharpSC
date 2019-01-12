@@ -11,6 +11,7 @@ namespace TextbookEx5
             Name = name;
             Age = age;
         }
+        //CompareTo function is being used to get the difference between the age of two people
         public int CompareTo(object obj)
         {
             if (obj is Person)
