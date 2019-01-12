@@ -1,11 +1,13 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace ConsoleApp
 {
+    enum Location
+    {
+        World,
+        Universe,
+        Galaxy
+    }
     class HelloWorld
     {
         static public string hello
@@ -15,9 +17,19 @@ namespace ConsoleApp
                 return "Hello";
             }
         }
-        static public string world()
+        static public string getLocation(Location l)
         {
-            return "World";
+            switch (l)
+            {
+                case Location.World:
+                    return "World";
+                case Location.Universe:
+                    return "Universe";
+                case Location.Galaxy:
+                    return "Galaxy";
+                default:
+                    return "Nobody";
+            }
         }
     }
     class Program
@@ -25,7 +37,12 @@ namespace ConsoleApp
 
         static void Main(string[] args)
         {
-            Console.WriteLine(HelloWorld.hello + " " + HelloWorld.world() + "!");
+            Location w = Location.World;
+            Location g = Location.Galaxy;
+            Location u = Location.Universe;
+            Console.WriteLine(HelloWorld.hello + " " + HelloWorld.getLocation(w) + "!" +
+                "\n" + HelloWorld.hello + " " + HelloWorld.getLocation(g) + "!" +
+                "\n" + HelloWorld.hello + " " + HelloWorld.getLocation(u) + "!");
             Console.ReadKey();
         }
 
