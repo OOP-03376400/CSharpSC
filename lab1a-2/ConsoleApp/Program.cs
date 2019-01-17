@@ -21,7 +21,7 @@ namespace ConsoleApp
 
             foreach(Location item in locate)
             {
-                Console.WriteLine(HelloWorld.hello + " " + HelloWorld.getLocation(item) + "!");
+                Console.WriteLine(String.Format("{0} {1}!",HelloWorld.hello,HelloWorld.getLocation(item)));
             }
             /* 
              * Output
