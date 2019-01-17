@@ -1,5 +1,6 @@
 ﻿namespace ConsoleApp
 {
+    //The classes property and function are used to get string values for hello world etc.
     class HelloWorld
     {
         static public string hello
