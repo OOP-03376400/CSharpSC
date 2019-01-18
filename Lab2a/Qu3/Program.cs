@@ -16,8 +16,10 @@ namespace Qu3
             //?? operator states, if nullInt is null then set nullInt to -1 otherwise nullInt is unchanged
             nullInt = nullInt ?? -1;
             nullDouble = nullDouble ?? -3.1;
- 
-            Console.WriteLine(String.Format("nullInt = {0}\nnullDouble = {1}",nullInt, nullDouble));
+            int[] arr = new int[1];
+            //?[] operator is saying if array is not null, add value of isNull to index 0
+            int? isNull = arr?[0];
+            Console.WriteLine(String.Format("nullInt = {0}\nnullDouble = {1}\nisNull = {2}",nullInt, nullDouble, isNull));
             Console.ReadKey();
         }
     }
