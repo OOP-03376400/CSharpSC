@@ -2,6 +2,7 @@
 
 namespace Qu1
 {
+    //the properties and methods in this file can be used by all derived classes. Cow and Chicken
     public abstract class Animal
     {
         protected string name;
