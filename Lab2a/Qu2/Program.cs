@@ -1,11 +1,17 @@
-﻿namespace Qu2
+﻿using System;
+
+namespace Qu2
 {
     class Program
     {
         static void Main(string[] args)
         {
-            Rectangle<int> rectInt = new Rectangle<int>(3, 5);
-            Rectangle<double> rectDouble = new Rectangle<double>(3.25, 4.25);
+            //create rectangles using int and double
+            Rectangle<double> rectD = new Rectangle<double>(3, 4.3);
+            Rectangle<int> rectI = new Rectangle<int>(3, 4);
+            //print out the object values returned by area function
+            Console.WriteLine(String.Format("rectD {0}\nrectI {1}",rectD.area(), rectI.area()));
+            Console.ReadKey();
         }
     }
 }
