@@ -34,7 +34,6 @@ namespace Qu3
             Console.WriteLine(
                 String.Format("Ternary {0}\nHasValue {1}\nCoalescing {2}", t, h, c)
                 );
-
             Console.ReadKey();
         }
     }
