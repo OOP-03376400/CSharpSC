@@ -12,7 +12,7 @@ namespace Qu1Ex2
         {
             IList<int> intList = new List<int>() { 10, 20, 30, 40 };
 
-            //Or
+            //this method of declaring a list initializes the objects in the list when the list is created
             
             IList<Student> studentList = new List<Student>() {
                 new Student(){ StudentID=1, StudentName="Bill"},
