@@ -12,6 +12,7 @@ namespace Question4
         public string GetClassList()
         {
             string ret = "";
+            //ensure that S is student then add name and saying foreach student to string
             if (students is List<Student>)
             {
                 foreach (var student in students)
