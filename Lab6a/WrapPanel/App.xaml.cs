@@ -6,7 +6,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Windows;
 
-namespace Qu2
+namespace WrapPanel
 {
     /// <summary>
     /// Interaction logic for App.xaml

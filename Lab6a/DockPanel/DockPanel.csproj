@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{EEDD70F9-95E0-409A-A930-D91DCE967D2E}</ProjectGuid>
+    <ProjectGuid>{A9E60C1B-91B3-4320-8363-ABD87A7E970C}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <RootNamespace>Qu2</RootNamespace>
-    <AssemblyName>Qu2</AssemblyName>
+    <RootNamespace>DockPanel</RootNamespace>
+    <AssemblyName>DockPanel</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>

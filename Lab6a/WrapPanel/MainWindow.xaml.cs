@@ -13,7 +13,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace Qu2
+namespace WrapPanel
 {
     /// <summary>
     /// Interaction logic for MainWindow.xaml

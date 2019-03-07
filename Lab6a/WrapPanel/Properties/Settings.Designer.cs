@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Qu2.Properties
+namespace WrapPanel.Properties
 {
 
 
