@@ -12,6 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using Convert = System.Convert;
 using Label = System.Reflection.Emit.Label;
 
 namespace Qu3BMI
@@ -28,7 +29,9 @@ namespace Qu3BMI
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            BMIResult.Content = 
+            int h = Convert.ToInt32(height.Text);
+            int w = Convert.ToInt32(weight.Text);
+            BMIResult.Content = "Your BMI Is " + (w * 703) / (h * h);
         }
     }
 }
