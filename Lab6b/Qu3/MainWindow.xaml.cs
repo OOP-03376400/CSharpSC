@@ -13,7 +13,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace Qu2
+namespace Qu3
 {
     /// <summary>
     /// Interaction logic for MainWindow.xaml
@@ -21,7 +21,7 @@ namespace Qu2
     public partial class MainWindow : Window
     {
         public MainWindow()
-        {      
+        {
             InitializeComponent();
         }
     }
