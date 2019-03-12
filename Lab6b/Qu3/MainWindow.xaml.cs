@@ -20,9 +20,25 @@ namespace Qu3
     /// </summary>
     public partial class MainWindow : Window
     {
+        List<Student> students = new List<Student>
+        {
+            new Student
+            {
+                firstName = "Bill",
+                lastName = "phil",
+                age = 55
+            },
+            new Student
+            {
+                firstName = "Jill",
+                lastName = "phil",
+                age = 51
+            }
+        };
         public MainWindow()
         {
             InitializeComponent();
+            Combo.ItemsSource = students;
         }
     }
 }
