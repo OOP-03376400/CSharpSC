@@ -29,31 +29,20 @@ namespace Qu1
                 "Data Source=.\\SQLEXPRESS01;Initial Catalog=ProductDB;"
                 + "Integrated Security=true";
 
-            // Provide the query string with a parameter placeholder.
             string queryString =
                 "SELECT * FROM dbo.Products";
 
-            // Create and open the connection in a using block. This
-            // ensures that all resources will be closed and disposed
-            // when the code exits.
             using (SqlConnection connection =
                 new SqlConnection(connectionString))
             {
-                // Create the Command and Parameter objects.
                 SqlCommand command = new SqlCommand(queryString, connection);
-
-
-                // Open the connection in a try/catch block. 
-                // Create and execute the DataReader, writing the result
-                // set to the console window.
                 connection.Open();
                 using (var DTProducts = new DataTable())
                 {
                     DTProducts.Load(command.ExecuteReader());
                     dataList.ItemsSource = DTProducts.DefaultView;
                 }
-                connection.Close();
-                   
+                connection.Close();             
             }
         }
     }
