@@ -29,8 +29,6 @@ namespace Qu1
                                  orderby P.UnitPrice ascending
                                  select new { P.ProductID, P.UnitPrice, P.ProductName }).ToList();
                 dataList.ItemsSource = LProducts;
-
-
             }
             
         }
