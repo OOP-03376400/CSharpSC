@@ -26,31 +26,15 @@ namespace Qu5
             InitializeComponent();           
         }
 
-        private void SaveThoughtbtn_Click(object sender, RoutedEventArgs e)
-        {
-            using (var db = new ThoughtEntities())
-            {               
-                db.Thoughts.Add(new Thought { Id = 0, Thought1 = ThoughtVal.Text});
-                // This doesn't work because my Id field won't increment properly
-                db.SaveChanges();
-            }
-        }
-
-        private void Button_Click(object sender, RoutedEventArgs e)
-        {
-            using (var DB = new ThoughtEntities())
-            {
-                var thoughts = (from t in DB.Thoughts
-                                 orderby t.Id ascending
-                                 select new { t.Id, t.Thought1 }).ToList();
-                ThoughtList.ItemsSource = thoughts;
-            }
-        }
-
         private void Button_Click_1(object sender, RoutedEventArgs e)
         {
             if (passBox.Password == ConfigurationManager.AppSettings["Password"])
+            {
                 signinLabel.Content = "Sign In Successful";
+                var th = new ThoughtWindow();
+                th.Show();
+                this.Close();
+            }
             else
                 signinLabel.Content = "Sign In Not Successful";
         }
